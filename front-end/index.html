@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet"  />
+    <title>Trouvez vos activités sur Montpelier</title>
+</head>
+<body>
+    <header>
+        <h1>Trouvez vos activités sur Montpelier</h1>
+    </header>
+    <main>
+        <form class="search-section">
+            <div>
+                <label for="search-activity">Recherchez une activité en particulier</label>
+            <input id="search-activity" type="text">
+            <button id="search-btn" type="submit">Rechercher</button>
+            </div>
+            <div>
+                <label for="activity-type">Type d'activité :</label>
+            <select id="activity-type">
+                <option value="">-- Tous les types --</option>
+                <option value="sport">Sport</option>
+                <option value="culture">Culture</option>
+                <option value="adventure">Aventure</option>
+                <option value="relaxation">Détente</option>
+            </select>
+            </div>
+            
+        </form>
+        
+        <section class="results-section">
+            <h1 id="activities-title"></h1>
+            <ul id="results-list"></ul>
+        </section>
+    </main>
+    <footer>
+        <p class="copyright">&copy; 2024 Activity Search Engine</p>
+    </footer>
+
+    <script src="index.js"></script>
+</body>
+</html>
