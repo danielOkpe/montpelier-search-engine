@@ -25,13 +25,13 @@ main {
     gap: 25px;
 }
 
-.search-section div{
+.search-section div {
     display: flex;
     justify-content: center;
     gap: 3px;
 }
 
-#search-display{
+#search-display {
     display: flex;
     flex-direction: column;
 }
@@ -40,11 +40,10 @@ label {
     font-weight: bold;
 }
 
-form{
+form {
     display: flex;
     justify-content: center;
     gap: 3px;
-
 }
 
 select {
@@ -75,13 +74,15 @@ button:hover {
 
 h2 {
     margin-top: 0;
+    font-size: 1.5em;
 }
 
 #results-list {
     display: grid;
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: repeat(2, 1fr);
     list-style-type: none;
     padding: 0;
+    gap: 20px;
 }
 
 #results-list li {
@@ -91,18 +92,135 @@ h2 {
     padding: 10px;
     border-bottom: 1px solid #ddd;
     margin: auto;
-    height: 600px;
+    height: auto;
     text-align: center;
+    font-size: 1em;
+    height: 700px;
 }
-#results-list li img{
-    max-width: 500px;
-    height: 350px;
+
+#results-list li img {
+    max-width: 100%;
+    height: 500px;
     margin: auto;
+    border-radius: 8px;
 }
+
 #results-list li:last-child {
     border-bottom: none;
 }
 
-.copyright{
+.copyright {
     text-align: center;
+    padding: 10px;
+}
+
+/* ----------- Responsive Design ----------- */
+@media (max-width: 1024px) {
+    #results-list {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .search-section {
+        gap: 15px;
+    }
+
+    form {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    select {
+        margin-right: 0;
+        width: 100%;
+    }
+
+    button {
+        width: 100%;
+    }
+
+    h2 {
+        font-size: 1.3em;
+    }
+
+    #results-list li {
+        font-size: 0.9em;
+    }
+
+    #results-list li img {
+        max-width: 90%;
+    }
+}
+
+@media (max-width: 768px) {
+    header {
+        padding: 15px;
+        font-size: 18px;
+    }
+
+    .search-section {
+        padding: 10px;
+    }
+
+    #results-list li {
+        padding: 8px;
+        font-size: 0.85em;
+    }
+
+    #results-list li img {
+        max-width: 85%;
+    }
+}
+
+@media (max-width: 400px) {
+    #results-list {
+        grid-template-columns: 1fr;
+    }
+
+    body {
+        padding: 10px;
+    }
+
+    header h1 {
+        font-size: 22px;
+    }
+
+    .search-section {
+        gap: 10px;
+    }
+
+    form {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    button {
+        padding: 8px;
+    }
+
+    .results-section {
+        padding: 10px;
+    }
+
+    #results-list li {
+        font-size: 0.8em;
+        padding: 5px;
+    }
+
+    #results-list li img {
+        max-width: 100%;
+        height: auto;
+        margin: auto;
+    }
+
+    h2 {
+        font-size: 1.1em;
+    }
+
+    p {
+        font-size: 0.9em;
+    }
+
+    .copyright {
+        font-size: 0.8em;
+    }
 }
