@@ -18,3 +18,11 @@ Pour chaque activité il faut que j'affiche:
     - le titre de l'activité
     - une description de l'activité
 
+
+Au chargement de la page, une liste d'activité par default avec tout les type d'activité s'affiche
+
+Il faut que lorsque je séléctionne un type d'activité cela m'affiche la liste d'activité qui à seulement ce type
+
+Si je tape le nom d'une activité dans la barre de recherche et que je clique sur 'rechercher', seul l'activité que j'ai recherché doit apparaitre.
+
+Cette activité se trouve dans la liste d'activités actuel que le client a récupéré.
