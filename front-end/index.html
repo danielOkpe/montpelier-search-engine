@@ -24,18 +24,16 @@
             <div>
                 <label for="activity-type">Type d'activité :</label>
             <select id="activity-type">
-                <option value="">-- Tous les types --</option>
-                <option value="sport">Sport</option>
-                <option value="culture">Culture</option>
-                <option value="adventure">Aventure</option>
-                <option value="relaxation">Détente</option>
+                <option onclick="getAllActivities()" value="">-- Tous les types --</option>
+                <option onclick="getActivityListByCategory('sport')" value="sport">Sport</option>
+                <option onclick="getActivityListByCategory('culture')" value="culture">Culture</option>
+                <option onclick="getActivityListByCategory('adventure')" value="adventure">Aventure</option>
             </select>
             </div>
             
         </section>
         
         <section class="results-section">
-            <h1 id="activities-title"></h1>
             <ul id="results-list"></ul>
         </section>
     </main>

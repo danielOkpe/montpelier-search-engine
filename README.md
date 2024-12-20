@@ -26,3 +26,5 @@ Il faut que lorsque je séléctionne un type d'activité cela m'affiche la liste
 Si je tape le nom d'une activité dans la barre de recherche et que je clique sur 'rechercher', seul l'activité que j'ai recherché doit apparaitre.
 
 Cette activité se trouve dans la liste d'activités actuel que le client a récupéré.
+
+lien du server = http://127.0.0.1:8000/
